@@ -1,0 +1,266 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 966px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 33px;
+}
+
+.header__logo{
+    padding-right: 108px;
+}
+
+.header__content{
+    padding-top: 30px;
+}
+
+.teader__text{
+    font-family: 'Myriad Pro Regular', sans-serif;
+    font-size: 35px;
+    letter-spacing: -1px;
+    padding-right: 20px;
+}
+
+.header__date{
+    font-family: 'Helvetica Neue Cyr Roman', sans-serif;
+    color: #4090db;
+    font-size: 15px;
+    letter-spacing: -1px;
+    padding: 8px 10px;
+    border: 1px solid #4090db;
+    border-radius: 2px;
+    position: relative;
+    bottom: 5px;
+}
+
+.header__content-info{
+    padding-top: 20px;
+    display: flex;
+}
+
+.info-posts,
+.info-followers,
+.info-following{
+    padding-right: 30px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 17px;
+    color: #3d4044;
+}
+
+.header__content-info span{
+    font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.header__content-calendar{
+    padding-top: 20px;
+}
+
+.header__content-calendar span{
+    font-family: 'Tahoma Regular', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: #262626;
+    padding-right: 14px;
+}
+
+.input-date{
+    font-family: 'Helvetica Neue Cyr Roman', sans-serif;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #333;
+    padding: 8px 70px 8px 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 24px;
+}
+
+.form-inp,
+.form-calendar{
+    position: relative;
+    display: inline-block;
+}
+
+.form-inp:after{
+    content: "\e5cd";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0px;
+    right: 55px;
+    font-size: 23px;
+    background-color: #ebebeb;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 33px;
+    width: 33px;
+    padding: 4px;
+}
+
+.form-calendar:after{
+    content: "\e916";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0px;
+    right: 24px;
+    font-size: 23px;
+    background-color: #ebebeb;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 33px;
+    width: 33px;
+    padding: 4px;
+    border-radius: 0 3px 3px 0;
+}
+
+.gallery{
+    background-color: #fafafa;
+    padding-top: 73px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+.gallery__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery__item{
+    height: 293px;
+    width: 293px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.item-bg-1{
+    background-image: url('../img/bg/gallery-1.jpg');
+}
+
+.item-bg-2{
+    background-image: url('../img/bg/gallery-2.jpg');
+}
+
+.item-bg-3{
+    background-image: url('../img/bg/gallery-3.jpg');
+}
+
+.item-bg-4{
+    background-image: url('../img/bg/gallery-4.jpg');
+}
+
+.item-bg-5{
+    background-image: url('../img/bg/gallery-5.jpg');
+}
+
+.item-bg-6{
+    background-image: url('../img/bg/gallery-6.jpg');
+}
+
+.item-bg-7{
+    background-image: url('../img/bg/gallery-7.jpg');
+}
+
+.item-bg-8{
+    background-image: url('../img/bg/gallery-8.jpg');
+}
+
+.item-bg-9{
+    background-image: url('../img/bg/gallery-9.jpg');
+}
+
+.gallery__inform{
+    padding-top: 80px;
+}
+.gallery__item img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.gallery__item a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    background-color: rgba(55, 54, 54, 0.5);
+}
+
+.day,
+.date{
+    width: 81px;
+}
+
+.inform__inner{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.inform__text{
+    padding-top: 80px;
+}
+
+.gallery__link{
+    margin-top: 45px;
+}
+
+.gallery__link a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 12px;
+    padding: 8px 29px;
+    border: 1px solid #000;
+    border-radius: 100px;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 640px) {
+	.gallery__wrapper{
+        justify-content: center;
+    }
+
+    .form-inp{
+        margin-top: 5px;
+    }
+
+    #date-to{
+        margin-left: 53px;
+    }
+}
+
+@media only screen and (max-width : 420px) {
+	.teader__text{
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width : 340px) {
+	#date-to{
+        margin-left: 0;
+    }
+}
+
